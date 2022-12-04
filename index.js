@@ -70,7 +70,7 @@ let cardHolderInput = document.querySelector("#cardHolderInput")
 let cardHolder = document.querySelector("#cardHolder")
 
 cardHolderInput.addEventListener("input", function(event){
-    event.target.value = event.target.value.replace(/[^a-zA-z]/g, '')
+    event.target.value = event.target.value.replace(/[^a-z A-Zа-яА-Я]/g, '')
     let value = event.target.value
     cardHolder.innerText = value
     if (value === ''){
