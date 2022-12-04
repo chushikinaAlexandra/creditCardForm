@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Card</title>
+</head>
+
+<body>
+    <section>
+        <div class="conteiner">
+            <form class="card-form">
+                <div class="card-list">
+                    <div id="card-item" class="card-item">
+                        <div class="card-item-side front">
+                            <div class="card-item-focus" style></div>
+                            <div class="card-item-cover">
+                                <img class="card-item-bg" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/1.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="card-item-wrapper">
+                                <div class="card-item-top">
+                                    <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png"
+                                        class="chip" alt="">
+                                    <div class="card-item-type">
+                                        <img class="card-item-typeImg" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <label for="cardNumber" id="cardNumberLabel" class="card-item-number">
+                                </label>
+                                <div class="card-item-content">
+                                    <label for="cardHolder" class="card-item-name">
+                                        <div class="card-holder">Card Holder</div>
+                                        <div class="card-name" id="cardHolder">FULL NAME</div>
+                                    </label>
+                                    <label for="cardDate" class="card-item-date">
+                                        <label for="cardExpires" class="card-date-title">Expires</label>
+                                        <label for="cardMonth" class="card-date"><span id="cardMonth">MM</span></label>
+                                        <label for="cardYear" class="card-date"><span id="cardYear">/YY</span></label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card-item-side-back" class="card-item-side back">
+                            <div class="card-item-cover">
+                                <img class="card-item-bg" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/1.jpeg">
+                            </div>
+                            <div class="card-item-band"></div>
+                            <div class="card-item-cvv">
+                                <div class="card-item-cvvTitle">CVV</div>
+                                <div id="cvv" class="card-item-cvvBand"></div>
+                                <div class="card-item-type">
+                                    <img class="card-item-typeImg" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-form-inner">
+                    <div class="card-input">
+                        <label for="cardNumber" class="card-label__label">Card Number</label>
+                        <input type="text" maxlength="19" id="cardNumberInput" class="card-input__input">
+                    </div>
+                    <div class="card-input">
+                        <label for="cardNumber" class="card-label__label">Card Holders</label>
+                        <input type="text" id="cardHolderInput" class="card-input__input">
+                    </div>
+                    <div class="card-form-row">
+                        <div class="card-form-col">
+                            <div class="card-form-group">
+                                <label for="cardNumber" class="card-label__label">Expiration Date</label>
+                                <select name="" id="cardMonthSelect" class="card-input__input select">
+                                    <option value="" disabled selected>Month</option>
+                                </select>
+                                <select name="" id="cardYearSelect" class="card-input__input select">
+                                    <option value="" disabled selected>Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-form-col cvv">
+                            <div class="card-input">
+                                <label for="cardNumber" class="card-label__label">CVV</label>
+                                <input id="cardCvvInput" maxlength="3" type="text" class="card-input__input">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
